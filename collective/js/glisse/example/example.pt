@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="collective.googledocsviewer">
+<body>
+<div metal:fill-slot="content-core">
+
+        <ul>
+            <li><img src="http://placekitten.com/240/140?1" class="myphotos" rel="group1" data-glisse-big="http://placekitten.com/1024/768?1" title="Aenean commodo ligula eget dolor" /></li>
+            <li><img src="http://placekitten.com/240/140?2" class="myphotos" rel="group1" data-glisse-big="http://placekitten.com/1024/768?2" title="Consectetuer adipiscing elit" /></li>
+            <li><img src="http://placekitten.com/240/140?3" class="myphotos" rel="group1" data-glisse-big="http://placekitten.com/1024/768?3" title="Aenean massa" /></li>
+            <li><img src="http://placekitten.com/240/140?4" class="myphotos" rel="group1" data-glisse-big="http://placekitten.com/1024/768?4" title="Lorem ipsum dolor sit amet" /></li>
+            <li><img src="http://placekitten.com/240/140?5" class="myphotos" rel="group1" data-glisse-big="http://placekitten.com/1024/768?5" title="Dis parturient montes" /></li>
+        </ul>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script>
+            $(function () {
+                $('.myphotos').glisse({speed: 500, changeSpeed: 550, effect:'roll', fullscreen: true}); 
+            });
+        </script>
+
+</div>
+</body>
+</html>
