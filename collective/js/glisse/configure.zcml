@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.js.glisse">
+
+  <browser:resourceDirectory
+    name="collective.js.glisse"
+    directory="resources"
+    />
+
+  <include package=".upgrades"/>
+
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.js.glisse"
+      directory="profiles/default"
+      description='Extension profile for collective.js.glisse.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>
